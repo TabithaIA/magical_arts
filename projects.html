@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+ .page {
+  background: rgb(220, 245, 221);
+  transform: translate(0px, -240px);
+ }
+ .bg {
+  background: slateblue;
+  border-radius: 20px;
+}
+ .bg2 {
+  background: darkslateblue;
+  border-radius: 20px;
+}
+ .downbg {
+  background: slateblue;
+  border: 4px solid rebeccapurple;
+  flex: flex-direction;
+  text-align: center;
+  justify-content: center;
+  transform: translate(0px, 200px);
+  border-radius: 20px;
+}
+
+ .centerbutton {
+  background: lightgreen;
+  padding: 10px;
+  border-radius: 10px;
+  border: 20px, 20px;
+  border-color: aqua;
+  margin: 0 2px;
+}
+ .centerbutton:hover {
+  background: rgb(195, 231, 195);
+  padding: 10px;
+  border-radius: 10px;
+  border: 20px, 20px;
+  border-color: aquamarine;
+  margin: 0 2px;
+  padding-left: 25px;
+  padding-right: 25px;
+ }
+ .centerbuttonpressed {
+  background: darkcyan;
+  padding: 10px;
+  border-radius: 10px;
+  border: 20px, 20px;
+  border-color: darkolivegreen;
+  margin: 0 2px;
+}
+
+ .normalbutton {
+  background: lightgreen;
+  padding: 10px;
+  border-radius: 10px;
+  border: 20px, 20px;
+  border-color: aqua;
+  margin: 0 2px;
+}
+ .normalbutton:hover {
+  background: rgb(195, 231, 195);
+  padding: 10px;
+  border-radius: 10px;
+  border: 20px, 20px;
+  border-color: aquamarine;
+  margin: 0 2px;
+ }
+</style>
+
+<body class="page">
+ <div style="flex: flex-direction; text-align: center; justify-content: center; transform: translate(0px, 50%);" class="bg">
+  <img src="me.png" width="300" style="transform: translate(0px, 80px); border-radius: 50px; border: 1px solid black;">
+  <h1 style="transform: translate(0px, -220px);">
+    .: Hi, I am Ema :.
+  </h1>
+  <br><br>
+  <h3 style="transform: translate(0px, -30px);">
+    Welcome to my personal website!
+  </h3>
+    <br><br>
+    <p style="transform: translate(0px, -80px);">This is my personal place to save my drawings and practice programming, sit down and have fun!</p>
+ </div>
+
+ <div style="display: flex; flex: flex-direction; text-align: center; justify-content: center; transform: translate(0px, 190px);" class="bg2">
+  <a href="about.html">
+    <button class="centerbutton">About me</button>
+  </a>
+  <a href="projects.html">
+    <button class="centerbuttonpressed">Projects</button>
+  </a>
+  <a href="drawings.html">
+    <button class="centerbutton">Drawings</button>
+  </a>
+  <a href="diary.html">
+    <button class="centerbutton">Diary</button>
+  </a>
+  <a href="log.html">
+    <button class="centerbutton">Log</button>
+  </a>
+  <a href="links.html">
+    <button class="centerbutton">Links</button>
+  </a>
+ </div>
+
+ <div class="downbg">
+  <strong><h2 style="background: darkslateblue;">Projects</h2></strong>
+  <h4>
+    Here are some of my projects
+  </h4>
+  <div>
+    <strong><h2 style="background: darkslateblue;">Remember's</h2></strong>
+    <img src="projects/remember.png" width="300" style="border-radius: 50px; border: 1px solid black;">
+    <h4 style="text-align: left; transform: translate(10px);">
+      Year of birth: 2025
+      <br>
+      Year of end: (not finished)
+      <br>
+      Updated: [Not finded]
+      <br>
+      Status: In process
+      <br>
+      Platforms: Windows
+      <br>
+      Published in: (Not published)
+      <br>
+      About: [Not finded]
+    </h4>
+  </div>
+  <div>
+    <strong><h2 style="background: darkslateblue;">Rhytmic Wave</h2></strong>
+    <img src="projects/rhytmicwave.png" width="300" style="border-radius: 50px; border: 1px solid black;">
+    <h4 style="text-align: left; transform: translate(10px);">
+      Year of birth: 2026
+      <br>
+      Year of end: (not finished)
+      <br>
+      Updated: 26/05/2026
+      <br>
+      Status: In process
+      <br>
+      Platforms: Windows, Android
+      <br>
+      Published in: Itch.io
+      <br>
+      About: Rhytmic Wave is a rhythm game about microgames where you has to making activities in fast time to not miss.
+      <br>
+      <a href="https://magicalarts-entertainment.itch.io/rhytmic-wave">
+        <button class="normalbutton">Download</button>
+      </a>
+    </h4>
+  </div>
+ </div>
+</body>
+</html>
