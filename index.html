@@ -62,9 +62,6 @@
  </div>
 
  <div style="display: flex; flex: flex-direction; text-align: center; justify-content: center; transform: translate(0px, 220px);" class="bg2">
-  <a href="index.html">
-    <button class="centerbuttonpressed">Index</button>
-  </a>
   <a href="about.html">
     <button class="centerbutton">About me</button>
   </a>
@@ -93,8 +90,28 @@
     <button class="centerbutton">Youtube</button>
   </a>
  </div>
- <div style="flex: flex-direction; text-align: center; justify-content: bottom; transform: translate(0px, 208px);" class="bg">
+  <div class="visitscount" style="flex: flex-direction; text-align: center; justify-content: bottom; transform: translate(0px, 258px);" class="bg">
+    <span>Visitas: </span>
+    <span id="visitsnum">Cargando...</span>
+ </div>
+ <div style="flex: flex-direction; text-align: center; justify-content: bottom; transform: translate(0px, 258px);" class="bg">
     <h5>This website is better into computer.</h5>
  </div>
 </body>
+
+<script>
+  const namespace = "mi-personal-page-goodness";
+  const key = "visitas";
+
+fetch(`https://abacus.jasoncameron.dev/hit/${namespace}/${key}`)
+.then(res => res.json())
+.then(data => {
+  document.getElementById("visitsnum").innerText = data.value;
+})
+.catch(err => {
+  console.error("Error ayudaaaaaa!!", err);
+  document.getElementById("visitsnum").innerText = "---";
+});
+</script>
+
 </html>
