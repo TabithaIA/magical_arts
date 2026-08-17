@@ -55,6 +55,17 @@
   border-color: darkolivegreen;
   margin: 0 2px;
 }
+
+ .img {
+  transition: transform 0.1s ease;
+  border-radius: 50px;
+  border: 1px solid black;
+ }
+ .img:hover {
+  transform: scale(1.2);
+  border-radius: 5px;
+  border: 1px solid black;
+ }
 </style>
 
 <body class="page">
@@ -113,20 +124,22 @@
   </h4>
   <h2 style="background: darkslateblue;">Favorite things</h2>
   <h4>
-    <img src="images/arrozconleche.jpg" width="80" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/mate.jpg" width="80" style="border-radius: 50px; border: 1px solid black;">
+    <img class="img" src="images/arrozconleche.jpg" width="80">
+    <img class="img" src="images/mate.jpg" width="80">
     <br>
     My favorite food is rice with milk and mate.
     <br>
     <br>
-    <img src="images/gato.jpg" width="80" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/dog.jpg" width="80" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/conejo.jpg" width="80" style="border-radius: 50px; border: 1px solid black;">
+    <img class="img" src="images/gato.jpg" width="80">
+    <img class="img" src="images/dog.jpg" width="80">
+    <img class="img" src="images/conejo.jpg" width="80">
     <br>
     My favorite pet is cats, but I like the dogs and bunnies too.
     <br>
     <br>
-    <img src="images/escuchandomusica.jpg" width="200" style="border-radius: 50px; border: 1px solid black;">
+    <div style="background: darkslateblue;">
+      <img src="images/escuchandomusica.jpg" width="200">
+    </div>
     <br>
     I like to listen to music, I listen to Kpop, Jpop, Pop, Lofi, and more!
     <br>
@@ -134,37 +147,61 @@
     <br>
     I usually listen to Billie Eilish, Aimee Carty, BlackPink, Hatsune Miku, Jack Stauber, Katseye, Limbo, Mxmtoon, NewJeans, Yena, IZ*ONE, but I really like Illit!
     <br>
-    <img src="images/bilieilish.jpg" width="80" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/aimecarty.jpg" width="140" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/blackpink.jpg" width="105" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/mikuu.jpg" width="105" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/jackstauber.jpg" width="105" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/katseye.jpg" width="130" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/limbo.jpg" width="140" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/mxmtoon.jpg" width="106" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/newjeans.jpg" width="106" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/yena.jpg" width="80" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/izone.jpg" width="106" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/illit.jpg" width="106" style="border-radius: 50px; border: 1px solid black;">
+    <img class="img" src="images/bilieilish.jpg" width="80">
+    <img class="img" src="images/aimecarty.jpg" width="140">
+    <img class="img" src="images/blackpink.jpg" width="105">
+    <img class="img" src="images/mikuu.jpg" width="105">
+    <img class="img" src="images/jackstauber.jpg" width="105">
+    <img class="img" src="images/katseye.jpg" width="130">
+    <img class="img" src="images/limbo.jpg" width="140">
+    <img class="img" src="images/mxmtoon.jpg" width="106">
+    <img class="img" src="images/newjeans.jpg" width="106">
+    <img class="img" src="images/yena.jpg" width="80">
+    <img class="img" src="images/izone.jpg" width="106">
+    <img class="img" src="images/illit.jpg" width="106">
     <br>
     <br>
-    <img src="images/jugando.jpg" width="200" style="border-radius: 50px; border: 1px solid black;">
+    <div style="background: darkslateblue;">
+      <img src="images/jugando.jpg" width="200">
+    </div>
     <br>
     I like to visual novels, cozy, puzzle and rhythm games.
     <br>
     My favorite games are Minecraft, Hatsune Miku Colorful Stage, all the Rhythm Heaven games, Friday Night Funkin, OSU!, Mindwave, Heartopia, and more.
     <br>
-    <img src="images/minecraft.jpg" width="80" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/pjsekai.jpg" width="80" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/rhythmheaven.png" width="106" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/fnf.png" width="80" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/osu.png" width="80" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/mindwave.jpg" width="80" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/heartopia.jpg" width="80" style="border-radius: 50px; border: 1px solid black;">
-    <img src="images/genchinimpact.jpg" width="80" style="border-radius: 50px; border: 1px solid black;">
+    <img class="img" src="images/minecraft.jpg" width="80">
+    <img class="img" src="images/pjsekai.jpg" width="80">
+    <img class="img" src="images/rhythmheaven.png" width="106">
+    <img class="img" src="images/fnf.png" width="80">
+    <img class="img" src="images/osu.png" width="80">
+    <img class="img" src="images/mindwave.jpg" width="80">
+    <img class="img" src="images/heartopia.jpg" width="80">
+    <img class="img" src="images/genchinimpact.jpg" width="80">
     <br>
     <br>
-    My favorite series are Boku no Hero Academy, Kung Fu Wa, Candy Candy, Demon Slayer, Vera and the Rainbow Kingdom, Phineas and Ferb, and more.
+    <div style="background: darkslateblue;">
+      <img src="images/tv.webp" width="200">
+    </div>
+    <br>
+    My favorite cartoons, series and animes are Boku no Hero Academy, Kung Fu Wa, Candy Candy, Demon Slayer, True and the Rainbow Kingdom, Phineas and Ferb, Courage the Cowardly dog, Wild Kratts, Doraemon, The Cat in the Hat, Miles from Tomorrowland, Jake Neverland Pirates, Adventure Time, The Simpsons, The Ghost and Molly McGee, The Owl House, Amphibia, and more.
+    <br>
+    <img class="img" src="images/bokunohero.jpeg" width="190">
+    <img class="img" src="images/kungfuwa.jpg" width="146">
+    <img class="img" src="images/candycandy.jpg" width="142">
+    <img class="img" src="images/demonslayer.jpg" width="110">
+    <img class="img" src="images/veraandreinbowkingdom.jpg" width="109">
+    <img class="img" src="images/phineasandferb.jpg" width="190">
+    <img class="img" src="images/courage.webp" width="106">
+    <img class="img" src="images/wildkratts.webp" width="100">
+    <img class="img" src="images/doraemon.avif" width="196">
+    <img class="img" src="images/thecatinthehat.webp" width="110">
+    <img class="img" src="images/milesfromtomorrowland.jpg" width="195">
+    <img class="img" src="images/jakeneverlandpirates.jpg" width="150">
+    <img class="img" src="images/adventuretime.png" width="190">
+    <img class="img" src="images/thesimpsons.webp" width="162">
+    <img class="img" src="images/theghostandmolly.webp" width="190">
+    <img class="img" src="images/theowlhouse.png" width="186">
+    <img class="img" src="images/amphibia.png" width="190">
   </h4>
  </div>
 </body>
