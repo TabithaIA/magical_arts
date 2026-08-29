@@ -240,29 +240,10 @@
   <a href="stealeshaha.html">
     <button class="centerbutton4">Affiliates</button>
   </a>
- </div>
-  <div class="visitscount" style="flex: flex-direction; text-align: center; justify-content: bottom; transform: translate(0px, 268px);" class="bg">
-    <span>Visitas: </span>
-    <span id="visitsnum">Cargando...</span>
- </div>
+</div>
  <div style="flex: flex-direction; text-align: center; justify-content: bottom; transform: translate(0px, 258px);" class="bg">
     <h5>This website is better into computer.</h5>
  </div>
 </body>
-
-<script>
-  const namespace = "mi-personal-page-goodness";
-  const key = "visitas";
-
-fetch(`https://abacus.jasoncameron.dev/hit/${namespace}/${key}`)
-.then(res => res.json())
-.then(data => {
-  document.getElementById("visitsnum").innerText = data.value;
-})
-.catch(err => {
-  console.error("Error ayudaaaaaa!!", err);
-  document.getElementById("visitsnum").innerText = "---";
-});
-</script>
 
 </html>
