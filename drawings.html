@@ -190,6 +190,20 @@
   border-color: rgb(78, 47, 107);
   margin: 0 2px;
 }
+
+.container-box {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.img-box {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 </style>
 
 <title>Magical DiaryLife</title>
@@ -247,11 +261,13 @@
   <h4>
     Here are some of my drawings (tap any image to view it in full screen, hold any image to view the info)
   </h4>
-  <div>
+  <div class="container-box">
     <strong><h2 style="background: darkslateblue;">28/08/2026</h2></strong>
+    <div>
     <a href="drawings/tennisbattle.png" target="_blank">
-      <img src="drawings/tennisbattle.png" title="¡Presentamos las batallas de tenis!" alt="La imagen nos muestra a una chica y un chico sentados en un sillón hablando" style="max-width: 20%; height: auto; border-radius: 50px; border: 1px solid black;">
+      <img class="img-box" src="drawings/tennisbattle.png" title="¡Presentamos las batallas de tenis!" alt="La imagen nos muestra a una chica y un chico sentados en un sillón hablando" style="max-width: 20%; height: auto; border-radius: 50px; border: 1px solid black;">
     </a>
+    </div>
     <a href="drawings/dilkycolorful.png" target="_blank">
       <img src="drawings/dilkycolorful.png" title="El mismo personaje, pero con colorful activado" alt="La imagen nos muestra a una chica y un chico sentados en un sillón hablando" style="max-width: 20%; height: auto; border-radius: 50px; border: 1px solid black;">
     </a>
