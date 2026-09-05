@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Especifica la ruta de tu sitemap si ya tienes un dominio propio o de GitHub Pages
+Sitemap: https://tabithaia.github.io/magical_arts/sitemap.xml
