@@ -5,6 +5,33 @@
 </head>
 
 <style>
+  /* ESTILOS DE LA HOJA DE BLOCK PARA CADA ENTRADA */
+ .hoja-block {
+  width: 90%;
+  max-width: 750px;
+  margin: 15px auto 30px auto;
+  background-color: #FDFDFD;
+  padding: 32px 20px 16px 65px; /* Espacio superior, derecho, inferior e izquierdo para la línea roja */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  line-height: 32px; /* Mismo tamaño que el patrón para encajar en el renglón */
+  color: #002366; /* Azul birome */
+
+  /* Patrón de fondo: Margen rojo vertical + Renglones horizontales en azul birome */
+  background-image: 
+    linear-gradient(to right, transparent 45px, #E74C3C 45px, #E74C3C 47px, transparent 47px),
+    linear-gradient(to bottom, transparent 31px, #1A3B8B 31px, #1A3B8B 32px);
+  background-size: 100% 32px;
+}
+
+ .hoja-block p {
+  margin: 0;
+}
+
  .page {
   background: rgb(189, 219, 248);
   transform: translate(0px, -280px);
@@ -249,9 +276,8 @@
   </h4>
   <div>
     <strong><h2 style="background: darkslateblue;">Dreams</h2></strong>
-    <h4 style="text-align: left; transform: translate(10px);">
-      I dream with be a singer someday...
-    </h4>
+    <div class="hoja-block">
+      <p>I dream with be a singer someday...</p>
   </div>
   <div>
     <strong><h2 style="background: darkslateblue;">Rutine</h2></strong>
@@ -260,9 +286,12 @@
     </h4>
   </div>
   <div>
+    <strong><h2 style="background: darkslateblue;">Notes</h2></strong>
+  </div>
+  <div>
     <strong><h2 style="background: darkslateblue;"><strong style="background-color: skyblue;">- 17/08/2026 -</strong> Para mi yo del pasado (Jamás te olvidaré) <strong style="background-color: aquamarine;">- Next song -</strong></h2></strong>
-    <h4 style="text-align: center;">
-      <strong style="color: wheat;">[Verso 1] (Introducción / El recuerdo)</strong>
+    <div class="hoja-block">
+      <p><strong style="color: wheat;">[Verso 1] (Introducción / El recuerdo)</strong>
       <br>
       Escribo esta canción para recordar a mi antiguo yo
       <br>
@@ -331,8 +360,7 @@
       <br>
       <strong style="color: wheat;">[Outro / Cierre] (Resolución suave)</strong>
       <br>
-      Y te abrazaré... como anhelabas.
-    </h4>
+      Y te abrazaré... como anhelabas.</p>
   </div>
  </div>
 </body>
