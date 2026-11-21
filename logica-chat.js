@@ -36,15 +36,28 @@ db.ref('mensajes').on('child_added', (snapshot) => {
     const mensajeKey = snapshot.key;
     const chatBox = document.getElementById('chat-box');
 
-    let horaTrans = "";
+    let fechaHoraTrans = "";
     if (datos.timestamp) {
         const fecha = new Date(datos.timestamp);
-        horaTrans = fecha.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit'});
+
+        const diaMes = fecha.toLocaleDateString([], {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric'
+        });
+
+        const horaMin = fecha.toLocaleTimeString([], {
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+
+        fechaHoraTrans = `${diaMes} ${horaMin}`;
     }
 
     const nuevoMensaje = document.createElement('div');
     nuevoMensaje.id = "msg-" + mensajeKey;
     nuevoMensaje.innerHTML = `<strong>${escapeHtml(datos.usuario)}:</strong> ${escapeHtml(datos.texto)}
+    <small style="opacity: 0.7; font-size: 0.8em;">${fechaHoraTrans}</small>
     <button onclick="eliminarMensaje('${mensajeKey}')" style="background: none; border: none; color: red; cursor: pointer; font-size: 10px; margin-left: 8px;" title="Eliminar">X</button>
     `;
 
