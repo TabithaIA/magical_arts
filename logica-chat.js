@@ -46,12 +46,13 @@ db.ref('mensajes').on('child_added', (snapshot) => {
             year: 'numeric'
         });
 
-        const horaMin = fecha.toLocaleTimeString([], {
+        const hora24 = fecha.toLocaleTimeString([], {
             hour: '2-digit',
-            minute: '2-digit'
+            minute: '2-digit',
+            hour12: false
         });
 
-        fechaHoraTrans = `${diaMes} ${horaMin}`;
+        fechaHoraTrans = `${diaMes} ${hora24}`;
     }
 
     const nuevoMensaje = document.createElement('div');
